@@ -1,0 +1,159 @@
+body{
+	background: #446CB3;
+}
+#container {
+	padding: 20px;
+	margin: auto;
+	width: 65%;
+	background-color: white;
+	margin-top: 75px;
+	box-shadow: 2 2 2px #000;
+	border-radius: 3px;
+	transition: width 2s, height 2s;
+}
+
+#add {
+    cursor: default;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 8px 15px;
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 12px;
+	margin-top: 15px;
+	background: #00b33c;
+	border: 1px outset #00b33c;
+	/*color: white;*/
+	width: 200px;
+}
+#add:hover{
+	background: #00cc44;
+	border: 1px outset #00cc44;
+}
+#add:active{
+	background: #00802b;
+	border: 1px solid #00802b;
+}
+#overlay {
+   background: rgba(0,0,0,.7);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   display: none;
+}
+#modal {
+	box-sizing: border-box;
+	background: white;
+	width: 40%;
+	box-shadow: 0 0 10px #000;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 150px;
+	z-index: 11;
+	padding: 20px;
+}
+#close{
+	float:right;
+	text-align:right;
+	margin-top:-10px;
+	margin-right:-10px;
+}
+#close a{
+	color: rgb(64, 64, 64);
+	text-decoration: none;
+	font-weight: bold;
+	/*background: green;*/
+}
+#close a:hover{
+	color: rgb(89, 89, 89);
+}
+#close a:active{
+	color: rgb(38, 38, 38);
+}
+
+.delform{
+    cursor: default;
+	padding: 3px;
+	font-size: 14px;
+	background: #E08283;
+	border: 1px outset #E08283;
+}
+.delform:hover{
+	background: #F1A9A0;
+	border: 1px outset #F1A9A0;
+}
+.delform:active{
+	background: #E26A6A;
+	border: 1px solid #E26A6A;
+}
+.editform{
+    cursor: default;
+	padding: 3px;
+	font-size: 14px;
+	background: #ECECEC;
+	border: 1px outset #ECECEC;
+}
+.editform:hover{
+	background: white;
+	border: 1px outset white;
+}
+.editform:active{
+	background: #DADFE1;
+	border: 1px solid #DADFE1;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+td{
+}
+tr:hover {
+	background-color: #D2D7D3;
+}
+table{
+	text-align: left;
+	width: 80%;
+	border-collapse: collapse; border: none;
+	font-family: Sans-serif;
+}
+#titleModal{
+	font-size: 30px;
+	font-weight: bold;
+}
+.op{
+	width: 5%;
+}
+
+#modalContent input:not([type='submit']) {    
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#modalContent input:not([type='submit']):focus{
+	transition: 1s;
+    border-bottom: 2px solid #34495e;
+}
+
+#modalContent input[type='submit']{
+	font-size: 15px;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: white;
+	background: #ECECEC;
+	border: 2px outset #ECECEC;
+}
+#modalContent input[type='submit']:hover{
+	background: white;
+	border: 2px outset white;
+}
+#modalContent input[type='submit']:active{
+	background: #DADFE1;
+	border: 2px solid #DADFE1;
+}
